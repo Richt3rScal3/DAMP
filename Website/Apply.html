@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Apply</title>
+<script src="https://bootstrapcreative.com/wp-bc/wp-content/themes/wp-bootstrap/codepen/bootstrapcreative.js?v=1"></script>
+  
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css'>
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Style the container/contact section */
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.column {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+.home {
+     
+     position:absolute;
+     top:0;
+     right:0;
+     font-size: xx-large;
+ }
+
+</style>
+</head>
+<body>
+    <div class ="home">
+  <a class="btn btn-primary btn-sm" href="Home.html" role="button">Home</a>
+</div>
+
+<div class="container">
+  <div style="text-align:center">
+    <h2>Apply<i class="fas fa-network-wired    "></i></h2>
+    <p>Apply here to become a seller </p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <img src="Apply.png" style="width:100%">
+    </div>
+    <div class="column">
+      <form action="/action_page.php">
+        <label for="fname">Dev Company</label>
+        <input type="text" id="fname" name="firstname" placeholder="Company Name">
+        <label for="lname">Game Title</label>
+        <input type="text" id="lname" name="lastname" placeholder="Title of Game">
+        <label for="country">Intent</label>
+        <select id="country" name="country">
+          <option value="australia">Publish</option>
+          <option value="canada">Verify</option>
+          <option value="usa">Test</option>
+        </select>
+        <label for="subject">Info</label>
+        <textarea id="subject" name="subject" placeholder="Please provide information and detail of game" style="height:170px"></textarea>
+        <a class="btn btn-primary btn-sm" href="Thank you.html" role="button">Submit</a>
+      </form>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
