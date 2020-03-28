@@ -35,6 +35,20 @@
   background-color: #253E47;
 }
 
+.column {
+  float: left;
+  width: 50%;
+  padding: 10px;
+  height: 300px; 
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .LIB {
      
      position:absolute;
@@ -42,6 +56,7 @@
      right:0;
      font-size: xx-large;
  }
+
 
      
 
@@ -52,10 +67,7 @@
 
  
 
-    <div class="header">
-        <h1>DAMP</h1>
-        <p>Welcomen to DAMP, Powered by Blockchain</p>
-      </div>
+   
 
       <div class ="LIB">
         <LIB><a class="btn btn-primary btn-sm" href="Home.html" role="button">DAMP</a></LIB>
@@ -67,8 +79,26 @@
     <Div class="game">
     
       <p style="text-align:center;"> <img src="Indie1.PNG" alt="India Game Logo"  style="vertical-align:middle"> </p>
+
+      <div class="header">
+        <h1>DAMP</h1>
+        <p>Welcomen to DAMP, Powered by Blockchain</p>
+    </div>
       
-        <P class="game">  <Font color="white">This is a test to see if shit is working </Font></P>
+       <div class="row">
+          <div class="column" style="background-color:#aaa;">
+            <h2>Text Will go here</h2>
+            <p>Teset</p>
+          </div>
+          <div class="column" style="background-color:#bbb;">
+            <h2>Pictures and vids will go here</h2>
+            <iframe width="420" height="345" src="https://www.youtube.com/watch?v=w7uOhFTrrq0"> </iframe>
+            <p></p>
+          </div>
+        </div>
+
+
+        
     </div>
 </div>
 </head>
